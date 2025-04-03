@@ -1,0 +1,10 @@
+vim tortugabot.repos
+repositories:
+  roboclaw_ros:
+    type: git
+    url: https://github.com/code-iai/roboclaw_ros.git
+    version: ros2
+  urg_node2:
+    type: git
+    url: https://github.com/code-iai/urg_node2.git
+    version: main
