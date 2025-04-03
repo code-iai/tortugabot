@@ -1,4 +1,3 @@
-vim tortugabot.repos
 repositories:
   roboclaw_ros:
     type: git
