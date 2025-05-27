@@ -1,31 +1,20 @@
-<package format="2">
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>tortugabot_bringup</name>
   <version>0.0.0</version>
-  <description>Launch files for starting the tortugabot </description>
-  <author>Alexis Maldonado</author>
-  <maintainer email="amaldo@cs.uni-bremen.de">Alexis Maldonado</maintainer>
-  <license>GPLv3+</license>
+  <description>Bringup scripts for the tortugabots</description>
+  <maintainer email="aniedz@cs.uni-bremen.de">Arthur Niedzwiecki</maintainer>
+  <license>Apache-2.0</license>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
 
-  <!-- 3dsensor.launch -->
-  <depend>openni2_launch</depend>
-  <depend>nodelet</depend>
-  <depend>urg_node</depend>
+  <exec_depend>ros2launch</exec_depend>
 
-  <!-- joy_teleop.launch -->
-  <depend>joy</depend>
-
-  <!-- {joy,keyboard}_teleop.launch -->
-  <depend>turtlebot_teleop</depend>
-
-  <!-- minimal.launch -->
-  <depend>tf</depend>
-  <depend>gmapping</depend>
-
-  <!-- map -->
-  <depend>map_server</depend>
-  <depend>amcl</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 </package>
-
-
